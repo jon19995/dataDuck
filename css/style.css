@@ -152,25 +152,38 @@ body {
         .dataDuck__currency-btns a:last-of-type {
           border-radius: 0px 4px 4px 0px; }
   .dataDuck__privacy {
-    display: grid;
-    grid-template-rows: 32px;
-    grid-template-columns: 32px 1fr;
-    -webkit-column-gap: 16px;
-            column-gap: 16px;
+    padding-left: 48px;
     margin-top: 24px;
     font-size: 12px;
     color: #7A8F99;
     letter-spacing: 0;
     line-height: 16px;
-    margin-bottom: 24px; }
-    .dataDuck__privacy input {
-      height: 100%; }
+    margin-bottom: 24px;
+    position: relative; }
+    .dataDuck__privacy #privacy {
+      visibility: hidden;
+      z-index: -1;
+      position: absolute; }
+      .dataDuck__privacy #privacy:checked + label::after {
+        background: #212d3e url(../img/check.png) center center/80% no-repeat; }
     .dataDuck__privacy label {
       font-size: 12px;
       color: #7A8F99;
       letter-spacing: 0;
       line-height: 16px;
-      font-family: serif; }
+      font-family: serif;
+      cursor: pointer; }
+      .dataDuck__privacy label::after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 32px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        left: 0;
+        background: #212d3e; }
   .dataDuck__error {
     display: none;
     width: 100%;
@@ -200,7 +213,7 @@ body {
       width: 280px;
       height: 40px;
       line-height: 40px;
-      top: calc(-100%  - 12px );
+      top: calc(-100% + 12px );
       left: 50%;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%);
@@ -279,7 +292,11 @@ body {
     left: 24px;
     top: 50%;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
+            transform: translateY(-50%);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
 
 .email {
   margin-bottom: 16px; }

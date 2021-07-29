@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
         removeError();
         if(email.value && pass.value.length >= 4 && privacy.checked){
             // отправка формы
+            form.reset();
         }else if(!email.value){
             removeError();
             erremail.classList.add('show');
