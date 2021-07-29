@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>DataDuck</title>
+</head>
+<body>
+    <section class="dataDuck">
+        <div class="container">
+            <header class="dataDuck__header">
+                <div class="dataDuck__header-left-item"></div>
+                <i class="dataDuck__header-logIn">
+                    <div class="dataDuck__header-img">
+                        <img src="img/user.svg" alt="logo">
+                    </div>
+                    <p>Войти</p>
+                </i>
+            </header>
+            <main class="dataDuck__mainContent">
+                <div class="dataDuck__descr">
+                    <h1>Начните торговать прямо сейчас</h1>
+                    <ul>
+                        <li class="dataDuck__list-item">
+                            <div class="dataDuck__img">
+                                <img src="img/check.png" alt="check">
+                            </div> 
+                            <p>Нет спреда — торгуйте с прозрачными<br> и точными котировками</p>
+                        </li>
+                        <li class="dataDuck__list-item">
+                            <div class="dataDuck__img">
+                                <img src="img/check.png" alt="check">
+                            </div> 
+                            <p>Достаточно депозита в $10, чтобы начать торговать</p>
+                        </li>
+                    </ul>
+                    <form action="#" class="dataDuck__form">
+                        <div class="email">
+                            <input  class="dataDuck__email" id="email" type="email" name="name" placeholder="Ваш e-mail">
+                            <label for="email">Ваш e-mail</label>
+                        </div>
+                        <div class="password">
+                            <input  class="dataDuck__password" id="password" type="password" name="name" placeholder="Придумайте пароль">
+                            <label for="password">Придумайте пароль</label>
+                            <div class="dataDuck__error dataDuck__error_pass">
+                                <p>Неверный пароль</p>
+                            </div>
+                        </div>
+                        
+                        <div class="dataDuck__currency">
+                            <p>Валюта для ввода и вывода средств</p>
+                            <div class="dataDuck__currency-btns">
+                                <a href="#" class="currency active">P</a>
+                                <a href="#" class="currency ">S</a>
+                                <a href="#" class="currency ">E</a>
+                                
+                            </div>
+                        </div>
+                        <div class="dataDuck__privacy">
+                            <input type="checkbox" name="privacy" id="privacy">
+                            <label for="privacy">Я совершеннолетний, ознакомился и принимаю соглашение об оказании услуг.</label>
+                        </div>
+                        <div class="dataDuck__error dataDuck__error_email">
+                            <img src="img/error.png" alt="error">
+                            <p>Учётная запись с указанным e-mail уже существует</p>
+                        </div>
+                        <div class="dataDuck__error dataDuck__error_privacy">
+                            <img src="img/error.png" alt="error">
+                            <p>Примите пользовательское соглашение</p>
+                        </div>
+                        <input type="submit" class="dataDuck__reg" value="Зарегистрироваться"></input>                    
+                    </form>
+                </div>
+                <div class="dataDuck__imgs">
+                    <img src="img/macbook/dark.png" alt="macbook" class="dataDuck__macbook">
+                    <img src="img/iphone/frontal-black.png" alt="iphone" class="dataDuck__iphone">
+                </div>
+
+
+            </main>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/e54a839d53.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
