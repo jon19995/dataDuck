@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         erremail.classList.remove('show');
         errpass.classList.remove('show');
         errprivacy.classList.remove('show');
+        privacy.parentNode.style.marginBottom = ``;
         form.querySelectorAll('input').forEach(item => {
             defaultBorder(item);
         });
@@ -53,6 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
             removeError();
             erremail.classList.add('show');
             Email.style.border = '1px solid #E15433';
+            privacy.parentNode.style.marginBottom = `24px`;
             
         } else if (pass.value.length < 4){
             removeError();
@@ -61,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             removeError();
             errprivacy.classList.add('show');
+            privacy.parentNode.style.marginBottom = `24px`;
         }
     });
 
