@@ -1,5 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 body {
-  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
   font-family: "Open Sans", sans-serif;
   font-style: normal; }
 
@@ -35,15 +35,11 @@ body {
       width: 140px;
       background: #fff; }
     .dataDuck__header-logIn {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      display: grid;
+      grid-template-columns: 24px 53px;
+      grid-template-rows: auto;
+      -webkit-column-gap: 7.5px;
+              column-gap: 7.5px;
       height: 40px;
       width: 120px;
       border: 1px solid #D8E1E6;
@@ -53,8 +49,7 @@ body {
       cursor: pointer; }
     .dataDuck__header-img {
       height: 24px;
-      width: 24px;
-      margin-right: 7.5px; }
+      width: 24px; }
       .dataDuck__header-img img {
         max-width: 100%; }
     .dataDuck__header p {
@@ -132,7 +127,7 @@ body {
       color: #7A8F99;
       letter-spacing: 0;
       line-height: 16px;
-      font-family: serif; }
+      font-family: sans-serif; }
     .dataDuck__currency-btns {
       border-radius: 4px;
       display: grid;

@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap')
+
 body
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap')
     font-family: 'Open Sans', sans-serif
     font-style: normal
 *
@@ -27,9 +28,10 @@ body
             width: 140px
             background: #fff
         &-logIn
-            display: flex
-            justify-content: center
-            align-items: center
+            display: grid
+            grid-template-columns: 24px 53px 
+            grid-template-rows: auto
+            column-gap: 7.5px
             height: 40px
             width: 120px
             border: 1px solid #D8E1E6
@@ -40,7 +42,6 @@ body
         &-img
             height: 24px
             width: 24px
-            margin-right: 7.5px
             img
                 max-width: 100%
         p
@@ -113,7 +114,7 @@ body
             color: #7A8F99
             letter-spacing: 0
             line-height: 16px
-            font-family: serif
+            font-family: sans-serif
         &-btns
             border-radius: 4px
             display: grid
